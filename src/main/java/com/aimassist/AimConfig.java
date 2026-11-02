@@ -15,6 +15,7 @@ public class AimConfig {
     public static double height = 0.70;
     public static double offset = 0.45;
     public static boolean playersOnly = true;
+        public static boolean stopAtEdge = true;
     public static boolean onlyWhenAttack = false;
 
     private static Path file() { return FabricLoader.getInstance().getConfigDir().resolve("aimassist.properties"); }
