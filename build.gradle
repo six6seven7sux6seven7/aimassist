@@ -1,6 +1,6 @@
 plugins { id 'fabric-loom' version '1.9-SNAPSHOT' }
 version = '1.1.0'
-base { archivesName = 'aimassist' }
+base { archivesName = 'Aim-Assist-1.21.4' }
 repositories {}
 dependencies {
     minecraft "com.mojang:minecraft:1.21.4"
