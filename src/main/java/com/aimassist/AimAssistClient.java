@@ -92,6 +92,7 @@ public class AimAssistClient implements ClientModInitializer {
         Box box = best.getBoundingBox();
         Vec3d look = me.getRotationVec(1.0f);
         boolean inside = box.raycast(eye, eye.add(look.multiply(AimConfig.range + 1.0))).isPresent();
+                if (inside && AimConfig.stopAtEdge) return;
 
         double speed = AimConfig.speed;
         if (inside) {
